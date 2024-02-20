@@ -1,0 +1,20 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Mutation {
+  deleteUser(reason: String!): Boolean!
+  validateUserAndUpdateDeviceToken(deviceToken: String!): User!
+}
+
+type Query {
+  me: User!
+}
+
+type User {
+  createdAt: String!
+  deviceToken: String
+  email: String!
+  id: ID!
+  updatedAt: String!
+}
