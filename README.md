@@ -96,6 +96,16 @@ This project is structured to facilitate development, testing, and deployment of
 - AWS account setup (in order to provide AWS's env variables)
     - CloudWatch is currently implemented for Logging. If you want, it can be disabled or replaced (code update required)
 
+### Repository Setup
+
+Clone the repository and install dependencies:
+
+```bash
+git clone git@github.com:maurim96/nestjs-graphql-scaffold.git
+cd nestjs-graphql-scaffold
+npm install
+```
+
 ### Development Setup
 
 Ensure you have Node.js and Docker installed on your machine. Then follow these steps to set up the project for development:
