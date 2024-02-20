@@ -1,5 +1,3 @@
-Based on the provided example and the specifics of your NestJS GraphQL API repository, here's a README template you might find useful:
-
 # NestJS GraphQL API
 
 This is the official repository for the NestJS GraphQL API, a robust backend service designed to offer efficient data handling and operations for web and mobile applications.
@@ -7,6 +5,63 @@ This is the official repository for the NestJS GraphQL API, a robust backend ser
 ## Overview
 
 This project is structured to facilitate development, testing, and deployment of a GraphQL-based API using NestJS, a progressive Node.js framework. The API is built with a focus on performance, scalability, and ease of use, incorporating various modern tools and practices.
+
+## Powered by
+
+<p align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <a href="https://docs.nestjs.com/">
+          <img src="https://github.com/maurim96/nestjs-graphql-scaffold/assets/22548752/d1c898cb-397f-4937-8e83-27cee1123036" width="110" height="90" alt="React Native logo"><br/>
+          Nest.js
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://www.postgresql.org/docs/">
+          <img src="https://github.com/maurim96/nestjs-graphql-scaffold/assets/22548752/38208c1d-6bb9-4946-9a5c-c96729f3e669" width="100" height="90" alt="Postgresql logo"><br/>
+          PostgreSQL
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://orm.drizzle.team/docs/overview">
+          <img src="https://github.com/maurim96/nestjs-graphql-scaffold/assets/22548752/a54390f1-5284-45a0-9db6-af2178ad8b56" width="100" height="90" alt="Drizzle logo"><br/>
+          Drizzle ORM
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://graphql.org/learn/">
+          <img src="https://github.com/maurim96/nestjs-graphql-scaffold/assets/22548752/474643de-4126-4639-9c7b-5bddbec022a5" width="110" height="90" alt="GraphQL logo"><br/>
+          GraphQL
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://clerk.com/docs">
+          <img src="https://github.com/maurim96/rn-expo-scaffold/assets/22548752/f2f691e0-c06f-45e8-96c8-580fa83a986e" width="150" height="90" alt="Clerk logo"><br/>
+          Clerk
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://docs.sentry.io/platforms/react-native/">
+          <img src="https://github.com/maurim96/nestjs-graphql-scaffold/assets/22548752/e7cd5c3f-7348-4bf4-9bce-54ec71a7c17b" width="110" height="90" alt="Sentry logo"><br/>
+          Sentry
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://docs.aws.amazon.com/">
+          <img src="https://github.com/maurim96/nestjs-graphql-scaffold/assets/22548752/27ad5a15-ad90-415f-ab6d-afb69be3d475" width="100" height="90" alt="AWS logo"><br/>
+          AWS
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://docs.docker.com/">
+          <img src="https://github.com/maurim96/nestjs-graphql-scaffold/assets/22548752/6b138799-8f10-4079-ac58-c9b1ffc9a276" width="100" height="90" alt="AWS logo"><br/>
+          Docker
+        </a>
+      </td>
+    </tr>
+  </table>
+</p>
 
 ### Project Structure
 
@@ -22,7 +77,7 @@ This project is structured to facilitate development, testing, and deployment of
 - [NestJS](https://nestjs.com/) for creating scalable server-side applications.
 - [GraphQL](https://graphql.org/) for efficient and flexible data queries.
 - [TypeScript](https://www.typescriptlang.org/) for static type checking.
-- [Drizzle](https://orm.drizzle.team/docs/overview) for database access and management.
+- [Drizzle ORM](https://orm.drizzle.team/docs/overview) for database access and management.
 - [Docker](https://www.docker.com/) for containerization and easy deployment.
 - [Sentry](https://docs.sentry.io/) for real-time error tracking and monitoring.
 - [AWS](https://docs.aws.amazon.com/) for cloud-based resources and logging with CloudWatch.
