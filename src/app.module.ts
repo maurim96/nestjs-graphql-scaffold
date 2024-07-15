@@ -7,7 +7,8 @@ import { AuthModule } from './auth/auth.module';
 import { DrizzleModule } from './drizzle/drizzle.module';
 import { GraphQLModule } from '@nestjs/graphql';
 import { UserModule } from './graphql/user/user.module';
-import { LoggerModule } from './logger/logger.module';
+import { PostModule } from './rest/post/post.module';
+// import { LoggerModule } from './logger/logger.module';
 
 @Module({
   imports: [
@@ -24,7 +25,9 @@ import { LoggerModule } from './logger/logger.module';
     AuthModule,
     DrizzleModule,
     UserModule,
-    LoggerModule,
+    PostModule,
+    // Deactivated LoggerModule for simplicty
+    // LoggerModule,
   ],
 })
 export class AppModule {}

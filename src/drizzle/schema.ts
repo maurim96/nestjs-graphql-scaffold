@@ -1,5 +1,13 @@
 import { randomUUID } from 'crypto';
-import { date, pgTable, uniqueIndex, uuid, varchar } from 'drizzle-orm/pg-core';
+import { relations } from 'drizzle-orm';
+import {
+  date,
+  pgTable,
+  timestamp,
+  uniqueIndex,
+  uuid,
+  varchar,
+} from 'drizzle-orm/pg-core';
 
 export const users = pgTable(
   'users',
@@ -16,6 +24,24 @@ export const users = pgTable(
     };
   },
 );
+
+export const posts = pgTable('posts', {
+  id: uuid('id')
+    .primaryKey()
+    .$defaultFn(() => randomUUID()),
+  userId: varchar('user_id')
+    .notNull()
+    .references(() => users.id, {
+      onDelete: 'cascade',
+    }),
+  title: varchar('title'),
+  content: varchar('body'),
+  createdAt: timestamp('created_at').defaultNow().notNull(),
+});
+
+export const usersRelations = relations(users, ({ many }) => ({
+  posts: many(posts),
+}));
 
 export const userDeletionLogs = pgTable(
   'user_deletion_logs',
