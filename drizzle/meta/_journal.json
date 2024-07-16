@@ -15,6 +15,13 @@
       "when": 1707941075081,
       "tag": "0001_slow_grim_reaper",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1721080026945,
+      "tag": "0002_fine_shockwave",
+      "breakpoints": true
     }
   ]
 }

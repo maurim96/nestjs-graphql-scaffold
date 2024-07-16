@@ -5,17 +5,19 @@ import {
   UnauthorizedException,
 } from '@nestjs/common';
 import { Clerk } from '@clerk/clerk-sdk-node';
+import { GqlExecutionContext } from '@nestjs/graphql';
 import { UserCredentials } from './get-user-credentials.decorator';
 
 @Injectable()
-export class ClerkAuthGuard implements CanActivate {
+export class ClerkAuthGraphqlGuard implements CanActivate {
   private clerk: ReturnType<typeof Clerk>;
 
   constructor() {
     this.clerk = Clerk({ secretKey: process.env.CLERK_SECRET_KEY });
   }
   async canActivate(context: ExecutionContext): Promise<boolean> {
-    const req = context.switchToHttp().getRequest();
+    const ctx = GqlExecutionContext.create(context);
+    const req = ctx.getContext().req;
 
     try {
       const sessionToken = req.headers['authorization']?.split(' ')[1];
