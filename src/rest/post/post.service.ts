@@ -20,9 +20,13 @@ export class PostService {
    * @returns An array of recent notifications for the specified user.
    */
   async createPost(userId: string, createPostDTO: CreatePostDTO) {
+    const result = await this.db
+      .insert(schema.posts)
+      .values({ ...createPostDTO, userId })
+      .returning();
     // this.logger.log(
     //   `[PostService] - loremp ipsum`,
     // );
-    return { ...createPostDTO, userId };
+    return result;
   }
 }
